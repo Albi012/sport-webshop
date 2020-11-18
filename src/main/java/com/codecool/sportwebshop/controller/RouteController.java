@@ -23,9 +23,9 @@ public class RouteController {
         return productDataManager.getAllProducts();
     }
 
-    @GetMapping("/product/{productType})")
-    List<Product> getAllByProduct(@PathVariable("productType")ProductType type) {
-        return productDataManager.getAllByProductType(type);
+    @GetMapping("/product/{type}")
+    List<Product> getAllByProduct(@PathVariable("type") String type) {
+        return productDataManager.getAllByProductType(ProductType.valueOf(type.toUpperCase()));
     }
 
 

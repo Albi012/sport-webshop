@@ -7,4 +7,7 @@ public enum ProductType {
     PANTS,
     OTHER;
 
+
+
+
 }

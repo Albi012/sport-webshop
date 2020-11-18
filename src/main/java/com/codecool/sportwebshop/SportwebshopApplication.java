@@ -41,6 +41,20 @@ public class SportwebshopApplication {
                     .productType(ProductType.OTHER)
                     .build();
             productRepository.saveAndFlush(product2);
+            Product product3 = Product.builder()
+                    .name("TestProduct3")
+                    .price(2000)
+                    .imgSrc("ezegylink")
+                    .productType(ProductType.TSHIRT)
+                    .build();
+            productRepository.saveAndFlush(product3);
+            Product product4 = Product.builder()
+                    .name("TestProduct4")
+                    .price(31000)
+                    .imgSrc("ezegylink")
+                    .productType(ProductType.PANTS)
+                    .build();
+            productRepository.saveAndFlush(product4);
         };
     }
 

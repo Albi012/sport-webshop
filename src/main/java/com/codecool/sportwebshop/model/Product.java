@@ -5,10 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,6 +23,7 @@ public class Product {
     String name;
     int price;
     String imgSrc;
+    @Enumerated(EnumType.STRING)
     ProductType productType;
     @ElementCollection
     Map<String,Integer> size;
