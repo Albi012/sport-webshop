@@ -31,7 +31,6 @@ public class SportwebshopApplication {
                     .name("TestProduct")
                     .price(2000)
                     .imgSrc("ezegylink")
-                    .size(Map.of("XL",12,"M",23))
                     .productType(ProductType.HOODIE)
                     .build();
             productRepository.saveAndFlush(product1);
@@ -39,7 +38,6 @@ public class SportwebshopApplication {
                     .name("TestProduct2")
                     .price(3000)
                     .imgSrc("ezegylink")
-                    .size(Map.of("42",1,"45",1))
                     .productType(ProductType.OTHER)
                     .build();
             productRepository.saveAndFlush(product2);
