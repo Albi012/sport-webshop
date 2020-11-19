@@ -26,6 +26,11 @@ public class RouteController {
         return productDataManager.getAllByProductType(ProductType.valueOf(type.toUpperCase()));
     }
 
+    @GetMapping("/delete/{productId}")
+    void deleteProductById(@PathVariable Long productId){
+        productDataManager.deleteProductById(productId);
+    }
+
     @PostMapping("/upload-product")
     boolean uploadNewProduct(@RequestBody ProductDataFromRequest productDataFromRequest){
         return productDataManager.saveNewProduct(productDataFromRequest);

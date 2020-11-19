@@ -44,4 +44,8 @@ public class ProductDataManager {
         Product product = productRepository.findByNameAndPriceAndProductType(productDataFromRequest.getName(), productDataFromRequest.getPrice(), productDataFromRequest.getProductType());
         return product != null;
     }
+
+    public void deleteProductById(Long productId) {
+        productRepository.deleteById(productId);
+    }
 }
