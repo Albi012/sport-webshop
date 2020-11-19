@@ -42,7 +42,7 @@ public class ProductDataManager {
 
     private boolean checkIfProductExist(ProductDataFromRequest productDataFromRequest) {
         Product product = productRepository.findByNameAndPriceAndProductType(productDataFromRequest.getName(), productDataFromRequest.getPrice(), productDataFromRequest.getProductType());
-        return product != null;
+        return product == null;
     }
 
     public void deleteProductById(Long productId) {
