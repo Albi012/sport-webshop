@@ -28,33 +28,53 @@ public class SportwebshopApplication {
     CommandLineRunner init() {
         return args -> {
             Product product1 = Product.builder()
-                    .name("TestProduct")
-                    .price(2000)
+                    .name("USAV SLEEVELESS HOODIE ")
+                    .price(55)
                     .imgSrc("ezegylink")
                     .productType(ProductType.HOODIE)
+                    .size(Map.of("XS", 1, "S", 1, "M", 1, "L", 1, "XL", 1, "XXL", 1, "XXXL", 1))
                     .build();
             productRepository.saveAndFlush(product1);
             Product product2 = Product.builder()
-                    .name("TestProduct2")
-                    .price(3000)
+                    .name("USAV SHORT SLEEVE HOODIE")
+                    .price(70)
                     .imgSrc("ezegylink")
-                    .productType(ProductType.OTHER)
+                    .productType(ProductType.HOODIE)
+                    .size(Map.of("XS", 1, "S", 1, "M", 1, "L", 1, "XL", 1, "XXL", 1, "XXXL", 1))
                     .build();
             productRepository.saveAndFlush(product2);
             Product product3 = Product.builder()
-                    .name("TestProduct3")
-                    .price(2000)
+                    .name("USAV CREW NECK")
+                    .price(65)
                     .imgSrc("ezegylink")
-                    .productType(ProductType.TSHIRT)
+                    .productType(ProductType.HOODIE)
+                    .size(Map.of("2XS", 1, "XS", 1, "S", 1, "M", 1, "L", 1, "XL", 1, "XXL", 1, "XXXL", 1))
                     .build();
             productRepository.saveAndFlush(product3);
             Product product4 = Product.builder()
-                    .name("TestProduct4")
-                    .price(31000)
+                    .name("USAV ZNE HOODIE")
+                    .price(100)
                     .imgSrc("ezegylink")
-                    .productType(ProductType.PANTS)
+                    .productType(ProductType.HOODIE)
+                    .size(Map.of("XS", 1, "S", 1, "M", 1, "L", 1, "XL", 1, "XXL", 1, "XXXL", 1))
                     .build();
             productRepository.saveAndFlush(product4);
+            Product product5 = Product.builder()
+                    .name("USAV ZIP HOODIE")
+                    .price(80)
+                    .imgSrc("ezegylink")
+                    .productType(ProductType.HOODIE)
+                    .size(Map.of("XS", 1, "S", 1, "M", 1, "L", 1, "XL", 1, "XXL", 1, "XXXL", 1))
+                    .build();
+            productRepository.saveAndFlush(product5);
+            Product product6 = Product.builder()
+                    .name("USAV ALL-W JACKET")
+                    .price(100)
+                    .imgSrc("ezegylink")
+                    .productType(ProductType.OTHER)
+                    .size(Map.of("XS", 1, "S", 1, "M", 1, "L", 1, "XL", 1, "XXL", 1, "XXXL", 1))
+                    .build();
+            productRepository.saveAndFlush(product5);
         };
     }
 
