@@ -9,6 +9,7 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import java.util.List;
 import java.util.Map;
 
 @Data
@@ -23,6 +24,6 @@ public class ProductDataFromRequest {
     @Enumerated(EnumType.STRING)
     ProductType productType;
     @ElementCollection
-    Map<String,Integer> size;
+    List<String> size;
 
 }
