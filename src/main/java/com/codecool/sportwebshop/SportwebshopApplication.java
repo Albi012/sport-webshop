@@ -94,13 +94,13 @@ public class SportwebshopApplication {
                     .name("TEAM 19 SINGLET")
                     .price(30)
                     .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/7.png?alt=media&token=7d394ad1-d6ef-4068-a8b1-25fb06d01101")
-                    .productType(ProductType.PANTS)
+                    .productType(ProductType.TSHIRT)
                     .build();
             productRepository.saveAndFlush(product10);
             Product product11 = Product.builder()
                     .name("ALPHASKIN SHORT SLEEVE TOP")
                     .price(20)
-                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/62v.png?alt=media&token=ab072b34-9ddb-4d80-bf1e-a28b0dcc612d")
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/62v.png?alt=media&token=ab6f2227-fc1e-4837-bb1b-dac1e5199725")
                     .productType(ProductType.TSHIRT)
                     .build();
             productRepository.saveAndFlush(product11);
@@ -118,6 +118,55 @@ public class SportwebshopApplication {
                     .productType(ProductType.TSHIRT)
                     .build();
             productRepository.saveAndFlush(product13);
+            Product product14 = Product.builder()
+                    .name("COMFORT FLEECE 3.0")
+                    .price(25)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/123v3.png?alt=media&token=205266b2-f8b0-41cb-8a51-6cf7281fc5ae")
+                    .productType(ProductType.OTHER)
+                    .build();
+            productRepository.saveAndFlush(product14);
+            Product product15 = Product.builder()
+                    .name("COMFORT FLEECE 3.0")
+                    .price(25)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/123v3.png?alt=media&token=205266b2-f8b0-41cb-8a51-6cf7281fc5ae")
+                    .productType(ProductType.OTHER)
+                    .build();
+            productRepository.saveAndFlush(product15);
+            Product product16 = Product.builder()
+                    .name("ZONYK MID")
+                    .price(159)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/124v1.png?alt=media&token=0757ca92-4187-4e81-ac00-d19d8b7e229a")
+                    .productType(ProductType.OTHER)
+                    .build();
+            productRepository.saveAndFlush(product16);
+            Product product17 = Product.builder()
+                    .name("ULTIMATE POLO")
+                    .price(60)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/87v2.png?alt=media&token=b5a2013d-fc06-414d-89d0-b9472d07785c")
+                    .productType(ProductType.TSHIRT)
+                    .build();
+            productRepository.saveAndFlush(product17);
+            Product product18 = Product.builder()
+                    .name("VOYAGER")
+                    .price(28)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/123v2.png?alt=media&token=811857c4-c4e1-454e-addc-bb7fcf636d14")
+                    .productType(ProductType.OTHER)
+                    .build();
+            productRepository.saveAndFlush(product18);
+            Product product19 = Product.builder()
+                    .name("ULTIMATE TEXTURED STRIPE POLO")
+                    .price(75)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/87v3.png?alt=media&token=56a52b4e-5e77-467c-adcb-b9df2d0460a2")
+                    .productType(ProductType.TSHIRT)
+                    .build();
+            productRepository.saveAndFlush(product19);
+            Product product20 = Product.builder()
+                    .name("ULTIMATE 3-STRIPE POLO ")
+                    .price(70)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/87v.png?alt=media&token=f2177db0-6b77-422b-8bd6-cf64f632c5a0")
+                    .productType(ProductType.TSHIRT)
+                    .build();
+            productRepository.saveAndFlush(product20);
         };
     }
 
