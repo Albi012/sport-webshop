@@ -167,6 +167,41 @@ public class SportwebshopApplication {
                     .productType(ProductType.TSHIRT)
                     .build();
             productRepository.saveAndFlush(product20);
+            Product product21 = Product.builder()
+                    .name("CREATOR 365 SHORT")
+                    .price(45)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/9a1.png?alt=media&token=7b744701-d503-4c2c-95f8-d05b96474def")
+                    .productType(ProductType.PANTS)
+                    .build();
+            productRepository.saveAndFlush(product21);
+            Product product22 = Product.builder()
+                    .name("CREATOR 365 SHORT")
+                    .price(45)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/9a2.png?alt=media&token=b78f22ba-80e0-4f1f-99f3-b0d6fd427f0b")
+                    .productType(ProductType.PANTS)
+                    .build();
+            productRepository.saveAndFlush(product22);
+            Product product23 = Product.builder()
+                    .name("CRAZY EXPLOSIVE SHORT")
+                    .price(35)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/12a.png?alt=media&token=e899de12-1e31-4bb1-9771-f3ebc6da8f12")
+                    .productType(ProductType.PANTS)
+                    .build();
+            productRepository.saveAndFlush(product23);
+            Product product24 = Product.builder()
+                    .name("FACEOFF PANT SHELL")
+                    .price(42)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/54a.png?alt=media&token=1c8b49fb-56f9-46a8-bed8-45ca79254b65")
+                    .productType(ProductType.PANTS)
+                    .build();
+            productRepository.saveAndFlush(product24);
+            Product product25 = Product.builder()
+                    .name("TEAM 19 3-POCKETSHORT")
+                    .price(40)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/63a.png?alt=media&token=fa9a284f-4661-45a8-9444-2ae37b241e94")
+                    .productType(ProductType.PANTS)
+                    .build();
+            productRepository.saveAndFlush(product25);
         };
     }
 
