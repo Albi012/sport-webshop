@@ -69,6 +69,55 @@ public class SportwebshopApplication {
                     .productType(ProductType.OTHER)
                     .build();
             productRepository.saveAndFlush(product6);
+            Product product7 = Product.builder()
+                    .name("TEAM 19 TRACK JACKET ")
+                    .price(60)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/11.png?alt=media&token=7d812396-79d7-4ca5-b8c9-57a103f363a8")
+                    .productType(ProductType.HOODIE)
+                    .build();
+            productRepository.saveAndFlush(product7);
+            Product product8 = Product.builder()
+                    .name("GAME MODE TRAINING HOOD")
+                    .price(60)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/9.png?alt=media&token=2e367686-25bc-4a7c-ab79-67e78c0a6883")
+                    .productType(ProductType.HOODIE)
+                    .build();
+            productRepository.saveAndFlush(product8);
+            Product product9 = Product.builder()
+                    .name("TEAM 19 KNIT SHORT ")
+                    .price(30)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/10.png?alt=media&token=9c1eb19d-daba-40db-9a2f-f99184ba1e4b")
+                    .productType(ProductType.PANTS)
+                    .build();
+            productRepository.saveAndFlush(product9);
+            Product product10 = Product.builder()
+                    .name("TEAM 19 SINGLET")
+                    .price(30)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/7.png?alt=media&token=7d394ad1-d6ef-4068-a8b1-25fb06d01101")
+                    .productType(ProductType.PANTS)
+                    .build();
+            productRepository.saveAndFlush(product10);
+            Product product11 = Product.builder()
+                    .name("ALPHASKIN SHORT SLEEVE TOP")
+                    .price(20)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/62v.png?alt=media&token=ab072b34-9ddb-4d80-bf1e-a28b0dcc612d")
+                    .productType(ProductType.TSHIRT)
+                    .build();
+            productRepository.saveAndFlush(product11);
+            Product product12 = Product.builder()
+                    .name("CLIMA TECH TEE")
+                    .price(15)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/51v.png?alt=media&token=84d45962-8a38-4fd8-bc3c-12edbb792521")
+                    .productType(ProductType.TSHIRT)
+                    .build();
+            productRepository.saveAndFlush(product12);
+            Product product13 = Product.builder()
+                    .name("AMPLIFIER SHORT SLEEVE TEE")
+                    .price(15)
+                    .imgSrc("https://firebasestorage.googleapis.com/v0/b/sport-webshop.appspot.com/o/52v.png?alt=media&token=0882591f-15ab-45a4-b39e-28799c9470a2")
+                    .productType(ProductType.TSHIRT)
+                    .build();
+            productRepository.saveAndFlush(product13);
         };
     }
 
