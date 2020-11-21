@@ -26,5 +26,5 @@ public class Product {
     @Enumerated(EnumType.STRING)
     ProductType productType;
     @ElementCollection
-    Map<String,Integer> size;
+    List<String> size;
 }
